@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Jquery</title>
+        <!--<script "https://ajax.googleapis.com/ajax/libs/Jquery/3.3.1/jquery.min.js"></script> secara onine-->
+        <script src="oke.js"></script>
+        <script>
+           /* $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color", "#cccccc");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "#ffffff");
+                });
+            });*/
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({left: '1850px'},"slow");
+                    $("div").animate({left: '100px'},"slow");
+                });
+            });
+            </script>
+             </head>
+        <body>
+            <!--Name : <input type="text" name="fullname"><br>
+            Email : <input type="text" name="email"><br>-->
+            <button>start animation</button>
+
+            <p>by default, all HTML elements have a statio posotion, and cannot be moved.To manipulate the position,remember to first set the CSS position property</p>
+
+            <div style="background:#98bf21;height:100px;width:100px;position:absolute"></div>
+        </body>
+</html>
+<!--<p>if you can do it.</p>
+<p>click me away!</p>
+<p>click me too</p>
+-->
